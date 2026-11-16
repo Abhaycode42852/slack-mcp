@@ -1,0 +1,29 @@
+{
+  "name": "slack-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Slack powered by your own browser session (xoxc + d cookie). Send, read, react to, edit, and search messages — including your own DM. No Slack app required.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "login": "tsx src/login.ts",
+    "cli": "tsx src/cli.ts",
+    "sync": "tsx src/cli.ts sync",
+    "emoji:build": "tsx src/build-emoji.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["slack", "mcp", "model-context-protocol"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

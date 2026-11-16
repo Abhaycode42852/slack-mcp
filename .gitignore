@@ -1,0 +1,19 @@
+# Dependencies & build output
+node_modules/
+dist/
+
+# Local runtime state (lives in the repo only if someone copies it in —
+# by default these live in %USERPROFILE%\.config\slack-mcp\)
+.env
+credentials.json
+directory.json
+pending.json
+audit.jsonl
+*.log
+logs/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
